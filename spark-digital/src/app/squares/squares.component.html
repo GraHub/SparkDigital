@@ -1,0 +1,34 @@
+<div style="text-align:center">
+  <span class="columna">
+    <div id="cuadro1" class="cuadrados" (click)="onClick($event)">
+      <div *ngIf="clicked ==='cuadro1'" 
+      [className]="clicked ==='cuadro1' ? 'circulo' : 'circulo-transparente'">
+      </div>
+      <div *ngIf="lastClicked ==='cuadro1' && clicked !== 'cuadro1'"
+      [className]="lastClicked ==='cuadro1'  ? 'circulo-sombreado' : 'circulo-transparente'">
+    </div>
+    </div>
+    <div></div>
+    <div class="cuadrados" id="cuadro2" (click)="onClick($event)">
+      <div *ngIf="clicked ==='cuadro2' " [className]="clicked ==='cuadro2' ? 'circulo' : 'circulo-transparente'"></div>
+      <div *ngIf="lastClicked ==='cuadro2' && clicked !== 'cuadro2'"
+        [className]="lastClicked ==='cuadro2' && clicked !== 'cuadro2' ? 'circulo-sombreado' : 'circulo-transparente'">
+      </div>
+    </div>
+  </span>
+  <div></div>
+  <span class="columna">
+    <div id="cuadro3" class="cuadrados" (click)="onClick($event)">
+      <div *ngIf="clicked ==='cuadro3' " [className]="clicked ==='cuadro3' ? 'circulo' : 'circulo-transparente'"></div>
+      <div *ngIf="lastClicked ==='cuadro3' && clicked !== 'cuadro3'"
+        [className]="lastClicked ==='cuadro3' && clicked !== 'cuadro3' ? 'circulo-sombreado' : 'circulo-transparente'">
+      </div>
+    </div>
+    <div class="cuadrados" id="cuadro4" (click)="onClick($event)">
+      <div *ngIf="clicked ==='cuadro4' " [className]="clicked ==='cuadro4' ? 'circulo' : 'circulo-transparente'"></div>
+      <div *ngIf="lastClicked ==='cuadro4' && clicked !== 'cuadro4'"
+        [className]="lastClicked ==='cuadro4' && clicked !== 'cuadro4' ? 'circulo-sombreado' : 'circulo-transparente'">
+      </div>
+    </div>
+  </span>
+</div>
